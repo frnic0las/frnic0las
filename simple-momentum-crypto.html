@@ -85,13 +85,21 @@
             <div class="cell large-4">
               <h2>The Strategy</h2>
               <p>The simple momentum strategy works as followed.<br />
-                For a list of assets, each momentum is calculated at a period that is pre-defined. Then, the asset to buy is simply the asset that has the strongest momentum.
+                For a list of assets, each momentum is calculated at a period that is pre-defined. Then, the asset to buy is simply the asset that has the strongest momentum. If all momentum are negative, then the system stays cash.
               </p>
               <p>
                 Regarding the crypto world, the strategy considers 2 assets: <strong>BTC</strong> and <strong>ETH</strong>.<br />
                 The momentum is made of 4 close price and is triggered every Saturday.<br />
                 The formula is simply: <em>((P0 / P1 - 1) * 100 + (P0 / P2 - 1) * 100 + (P0 / P3 - 1) * 100) / 3</em>, PO = Last Friday, P1 = Friday 7 days ago, P2 = Friday 14 days ago and P3 = Friday 21 days ago.
               </p>
+              <p>
+                Choosing this strategy, you agree that:
+              </p>
+              <ul>
+                <li>You can switch from one asset to the other (including cash) every Saturday,</li>
+                <li>We are not responsible for any loss that may happen,</li>
+                <li>Despite being an automatic strategy, you have full access to your account and can take manual actions if you desire (which is against the strategy though).</li>
+              </ul>
             </div>
             <div class="cell large-8">
               <h2>Backtest</h2>
