@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Raleway&display=swap");
+body {
+  background-color: #f3f7f8;
+  font-family: sans-serif;
+  color: #35495e;
+}
+
+h1, h2, h3 {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+}
+
+/*
+.off-canvas {
+	background-color: $top-bar-bg;
+	a {
+		color: $body-bg;
+	}
+
+	a.menu-text {
+		color: $body-bg;
+		border-bottom: 1px solid $body-bg;
+	}
+
+	a.button {
+		margin: 0 10px;
+		background-color: $body-bg;
+		color: $top-bar-bg;
+	}
+}
+.top-bar {
+	background-color: $top-bar-bg;
+
+	ul.menu {
+		background-color: transparent;
+
+		li {
+
+			a {
+				align-items: center;
+				color: $body-bg;
+			}
+
+			a:hover {
+				color: $top-bar-link-color-hover;
+			}
+
+			a.button {
+				background-color: $body-bg;
+				color: $top-bar-bg;
+			}
+		}
+	}
+
+	.cell {
+
+		a {
+			align-items: center;
+			color: $body-bg;
+
+			span {
+				display: inline-block;
+			}
+		}
+	}
+
+	.cell:nth-child(2) {
+		text-align: center;
+	}
+
+	.cell:last-child {
+		text-align: right;
+	}
+}
+*/
+.off-canvas {
+  background-color: #f3f7f8;
+}
+.off-canvas a {
+  color: #0092c6;
+}
+.off-canvas .menu-text {
+  border-bottom: 1px solid #35495e;
+}
+.off-canvas a.button {
+  margin: 0 10px;
+  background-color: #009589;
+  color: #f3f7f8;
+}
+
+.top-bar {
+  background-color: transparent;
+  border-bottom: 1px solid #35495e;
+  text-transform: uppercase;
+}
+.top-bar .menu {
+  display: flex;
+  background-color: transparent;
+}
+.top-bar .menu li {
+  align-items: center;
+}
+.top-bar .menu li a {
+  color: #0092c6;
+}
+.top-bar .menu li a:hover {
+  color: #009589;
+}
+.top-bar .menu li a.button {
+  background-color: #0092c6;
+  color: #f3f7f8;
+}
+.top-bar .menu li a.button:hover {
+  background-color: #009589;
+}
+.top-bar .website-title {
+  display: inline-block;
+  margin-right: 20px;
+}
+.top-bar .website-title img {
+  height: 40px;
+}
+.top-bar .cell:nth-child(2) {
+  text-align: center;
+}
+.top-bar .cell:last-child {
+  text-align: right;
+}
+.top-bar .material-icons {
+  font-size: 30px;
+}
+
+.breadcrumbs {
+  margin-top: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */
