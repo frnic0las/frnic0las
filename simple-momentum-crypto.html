@@ -204,16 +204,9 @@
             },
             y: {
               type: 'logarithmic',
-              start: 5000, // Start the y-axis at 0,
-              /*grid: {
-                display: false
-              },*/
               ticks: {
                 callback: (value, index, values) => {
-                  return new Intl.NumberFormat('en-US', { 
-                    style: 'currency',
-                    currency: 'USD'
-                  }).format(value);
+                  return priceInUSD(value);
                 },
                 stepSize: 100000
               }
