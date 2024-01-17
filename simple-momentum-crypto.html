@@ -193,6 +193,10 @@
         var ctx = document.getElementById('drawing').getContext('2d');
 
         var chartOptions = {
+          interaction: {
+            mode: 'index',
+            intersect: false,
+          },
           scales: {
             x: {
               grid: {
