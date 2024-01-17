@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Automatic Investment</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="" />
+    <!--<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="" />
+    <meta name="twitter:card" content="" />
+    <meta name="twitter:site" content="" />
+    <meta name="twitter:title" content="" />
+    <meta name="twitter:description" content="" />
+    <meta name="twitter:image" content="" />-->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.8.1/dist/css/foundation.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='website/css/style.css') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  </head>
+  <body>
+    <div class="off-canvas position-left" id="menu-website" data-off-canvas>
+      <ul class="vertical menu">
+        <li class="menu-text">MENU</li>
+        <li><a href="#">Portfolios</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Other</a></li>
+      </ul>
+    </div>
+    <div class="off-canvas position-right" id="menu-user" data-off-canvas>
+      <ul class="vertical menu">
+        <li class="menu-text">ACCOUNT</li>
+        <li><a href="">Register</a></li>
+        <li><a class="button">Login</a></li>
+      </ul>
+    </div>
+
+    <div class="off-canvas-content" data-off-canvas-content>
+      <header class="grid-x top-bar hide-for-medium hide-for-large">
+        <div class="cell small-1">
+          <a data-open="menu-website"><span class="material-icons">menu</span></a>
+        </div>
+        <div class="cell small-10">
+          <span class="website-title"><img src="{{url_for('static', filename='website/logo.png')}}">&nbsp;Automatic Investment</span>
+        </div>
+        <div class="cell small-1">
+          <a data-open="menu-user"><span class="material-icons">account_circle</span></a>
+        </div>
+      </header>
+      <header class="top-bar hide-for-small-only">
+        <div class="top-bar-left">
+          <ul class="menu">
+            <li class="website-title"><img src="{{url_for('static', filename='website/logo.png')}}">&nbsp;Automatic Investment</li>
+            <li><a href="#">Portfolios</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Other</a></li>
+          </ul>
+        </div>
+        <div class="top-bar-right">
+          <ul class="menu">
+            <li><a href="">Register</a></li>
+            <li><a class="button">Login</a></li>
+          </ul>
+        </div>
+      </header>
+      <main>
+        <div class="grid-container fluid">
+          <div class="grid-x grid-margin-x">
+            <div class="cell large-12">
+              <nav aria-label="You are here:" role="navigation">
+                <ul class="breadcrumbs">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Portfolios</a></li>
+                  <li>
+                    <span class="show-for-sr">Current: </span> Dual Momentum
+                  </li>
+                </ul>
+              </nav>
+              <h1>Crypto Simple Momentum</h1>
+            </div>
+            <div class="cell large-4">
+              <h2>The Strategy</h2>
+              <p>Simple momentum investing is a popular trading strategy among traders for the simple reason that it takes the fundamentals of momentum investing and hones it into an even more effective approach. The target of this strategy? Equities that are experiencing price uptrends on both a relative and absolute basis.</p>
+            </div>
+            <div class="cell large-8">
+              <h2>Backtest</h2>
+              <p>Since <i class="portfolio-start"></i> and an initial investment of <strong class="portfolio-equity-start"></strong>, the <i>Dual Momentum</i> strategy has returned <strong class="portfolio-equity"></strong>, while at the same time holding BTC through time would have made <strong class="btc-equity"></strong> and ETH <strong class="eth-equity"></strong>.
+              <!--<br />This backtest does not include dividends, and no money added.--></p>
+              <button class="button" id="logarithmic" disabled="disabled">Logarithmic</button>
+              <button class="button" id="linear">Linear</button>
+              <canvas id="drawing"></canvas>
+              <div id="drawing-fallback"></div>
+            </div>
+            <div class="cell large-12">
+              <p>&nbsp;</p>
+              <p>&nbsp;</p>
+              <p>&nbsp;</p>
+              <p>&nbsp;</p>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.8.1/js/foundation.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/moment"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+    $(document).foundation()
+
+    function handleEmptyData() {
+      document.getElementById('drawing').remove();
+      document.getElementById('drawing-fallback').innerHTML += '<div>Nothing to display here</div>';
+    }
+
+    function handleData(data) {
+      if(data.length === 0) {
+        handleEmptyData();
+      } else {
+        function getDayWithSuffix(day) {
+          if (day >= 11 && day <= 13) {
+            return day + 'th';
+          }
+          switch (day % 10) {
+            case 1:  return day + 'st';
+            case 2:  return day + 'nd';
+            case 3:  return day + 'rd';
+            default: return day + 'th';
+          }
+        }
+        function beautifulDate(date) {
+          var dateObject = new Date(date);
+          var fullMonth = dateObject.toLocaleDateString('en-US', { month: 'long' });
+          var fullYear = dateObject.getFullYear();
+          var fullDay = dateObject.getDate();
+
+          return fullYear + ', ' + fullMonth + ' ' + getDayWithSuffix(fullDay);
+        }
+
+        function priceInUSD(price) {
+          return new Intl.NumberFormat('en-US', { 
+            style: 'currency',
+            currency: 'USD'
+          }).format(price);
+        }
+
+        const jsonData = {{ data|tojson }};
+          
+        var dates = jsonData.map(function(item) {
+          return item.Date;
+        });
+        var equityValues = jsonData.map(function(item) {
+          return parseFloat(item["Equity"]);
+        });
+        let lastValue = equityValues[equityValues.length - 1];
+        var btcEquityValues = jsonData.map(function(item) {
+          return parseFloat(item["Equity BTC"]);
+        });
+        var ethEquityValues = jsonData.map(function(item) {
+          return parseFloat(item["Equity ETH"]);
+        });
+
+        let portfolioStart = dates[0];
+        let portfolioEquityStart = equityValues[0];
+        let portfolioEquity = equityValues[equityValues.length - 1];
+        let btcEquity = btcEquityValues[btcEquityValues.length - 1];
+        let ethEquity = ethEquityValues[ethEquityValues.length - 1];
+
+        $(".portfolio-start").text(beautifulDate(portfolioStart));
+        $(".portfolio-equity-start").text(priceInUSD(portfolioEquityStart));
+        $(".portfolio-equity").text(priceInUSD(portfolioEquity));
+        $(".btc-equity").text(priceInUSD(btcEquity));
+        $(".eth-equity").text(priceInUSD(ethEquity));
+
+        var ctx = document.getElementById('drawing').getContext('2d');
+
+        var chartOptions = {
+          scales: {
+            x: {
+              grid: {
+                display: false
+              },
+              ticks: {
+                stepSize: 200,
+              },
+            },
+            y: {
+              type: 'logarithmic',
+              start: 5000, // Start the y-axis at 0,
+              /*grid: {
+                display: false
+              },*/
+              ticks: {
+                callback: (value, index, values) => {
+                  return new Intl.NumberFormat('en-US', { 
+                    style: 'currency',
+                    currency: 'USD'
+                  }).format(value);
+                },
+                stepSize: 100000
+              }
+            }
+          },
+          plugins: {
+            tooltip: {
+              callbacks: {
+                label: function(context) {
+                  return [
+                    ' ' + context.dataset.label + ' Equity: ' + priceInUSD(context.parsed.y)
+                  ]
+                }
+              }
+            }
+          }
+        }
+
+        var chart = new Chart(ctx, {
+          type: 'line',
+          data: {
+            labels: dates,
+            datasets: [{
+              label: 'Simple Momentum',
+              data: equityValues,
+              borderColor: '#FA9EA9',
+              backgroundColor: '#FA9EA9',
+              borderWidth: 2,
+              pointStyle: false
+            },{
+              label: 'BTC',
+              data: btcEquityValues,
+              borderColor: '#F7931A',
+              backgroundColor: '#F7931A',
+              borderWidth: 1,
+              pointStyle: false
+            },{
+              label: 'ETH',
+              data: ethEquityValues,
+              borderColor: '#3484AC',
+              backgroundColor: '#3484AC',
+              borderWidth: 1,
+              pointStyle: false
+            }]
+          },
+          options: chartOptions
+        });
+
+        $("#logarithmic").click(function() {
+          chartOptions.scales.y.type = 'logarithmic';
+          $("#logarithmic").prop('disabled', true);
+          $("#linear").prop('disabled', false);
+
+          chart.update();
+        })
+        $("#linear").click(function() {
+          chartOptions.scales.y.type = 'linear';
+          $("#linear").prop('disabled', true);
+          $("#logarithmic").prop('disabled', false);
+
+          chart.update();
+        })
+      }
+    }
+
+    function loadDataDev() {
+      const data = {{ data|tojson }};
+      handleData(data);
+    }
+
+    /*function loadDataProd() {
+      document.addEventListener('DOMContentLoaded', function () {
+        const fileToLoad = 'files/simple_momentum_crypto.json';
+
+        fetch(fileToLoad)
+          .then(function(response) {
+            return response.json();
+          })
+          .then(function(jsonData) {
+            handleData(jsonData);
+          })
+          .catch(function(error) {
+            console.error('There was a problem with the fetch operation:', error);
+          });
+      });
+    }*/
+
+    function loadData(environment) {
+      if(environment === 'dev') {
+        loadDataDev();
+      } else if(environment === 'prod') {
+        loadDataProd();
+      } else {
+        console.error('Invalid environment parameter.');
+      }
+    }
+
+    loadData('dev');
+    </script>
+  </body>
+</html>
