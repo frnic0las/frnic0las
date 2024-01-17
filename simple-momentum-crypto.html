@@ -148,20 +148,18 @@
             currency: 'USD'
           }).format(price);
         }
-
-        const jsonData = {{ data|tojson }};
           
-        var dates = jsonData.map(function(item) {
+        var dates = data.map(function(item) {
           return item.Date;
         });
-        var equityValues = jsonData.map(function(item) {
+        var equityValues = data.map(function(item) {
           return parseFloat(item["Equity"]);
         });
         let lastValue = equityValues[equityValues.length - 1];
-        var btcEquityValues = jsonData.map(function(item) {
+        var btcEquityValues = data.map(function(item) {
           return parseFloat(item["Equity BTC"]);
         });
-        var ethEquityValues = jsonData.map(function(item) {
+        var ethEquityValues = data.map(function(item) {
           return parseFloat(item["Equity ETH"]);
         });
 
