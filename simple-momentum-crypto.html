@@ -167,10 +167,13 @@
         var dates = data.map(function(item) {
           return item.Date;
         });
-        var equityValues = data.map(function(item) {
-          return parseFloat(item["Equity"]);
+        var equityValuesSM = data.map(function(item) {
+          return parseFloat(item["Equity SM"]);
         });
-        let lastValue = equityValues[equityValues.length - 1];
+        let lastValue = equityValuesSM[equityValuesSM.length - 1];
+        var equityValuesDM = data.map(function(item) {
+          return parseFloat(item["Equity DM"]);
+        });
         var btcEquityValues = data.map(function(item) {
           return parseFloat(item["Equity BTC"]);
         });
@@ -179,8 +182,8 @@
         });
 
         let portfolioStart = dates[0];
-        let portfolioEquityStart = equityValues[0];
-        let portfolioEquity = equityValues[equityValues.length - 1];
+        let portfolioEquityStart = equityValuesSM[0];
+        let portfolioEquity = equityValuesSM[equityValuesSM.length - 1];
         let btcEquity = btcEquityValues[btcEquityValues.length - 1];
         let ethEquity = ethEquityValues[ethEquityValues.length - 1];
 
@@ -235,9 +238,16 @@
             labels: dates,
             datasets: [{
               label: 'Simple Momentum',
-              data: equityValues,
+              data: equityValuesSM,
               borderColor: '#FA9EA9',
               backgroundColor: '#FA9EA9',
+              borderWidth: 2,
+              pointStyle: false
+            },{
+              label: 'Dual Momentum',
+              data: equityValuesDM,
+              borderColor: '#579981',
+              backgroundColor: '#579981',
               borderWidth: 2,
               pointStyle: false
             },{
@@ -283,7 +293,7 @@
 
     function loadDataProd() {
       document.addEventListener('DOMContentLoaded', function () {
-        const fileToLoad = 'files/simple_momentum_crypto.json';
+        const fileToLoad = 'files/momentum_crypto.json';
 
         fetch(fileToLoad)
           .then(function(response) {
