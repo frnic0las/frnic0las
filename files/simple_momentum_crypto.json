@@ -4798,5 +4798,20 @@
     "Quantity": 301.3078014821817,
     "Equity BTC": 39044.0335795963,
     "Equity ETH": 54110.26184894681
+  },
+  {
+    "Date": "2024-01-19",
+    "BTC Price": 41618.40625,
+    "ETH Price": 2489.498535,
+    "BTC Score": -3.261688949723341,
+    "ETH Score": 5.5188635936911,
+    "Winner": "ETH",
+    "Loser": "BTC",
+    "Sell Action": "",
+    "Buy Action": "",
+    "Equity": 750105.3303739622,
+    "Quantity": 301.3078014821817,
+    "Equity BTC": 37919.02741775754,
+    "Equity ETH": 53360.87981684761
   }
 ]
