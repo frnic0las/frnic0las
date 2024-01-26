@@ -1,0 +1,817 @@
+[
+  {
+    "date": "2021-02-21",
+    "rent": 5.41,
+    "cumulative_rents": 5.41326
+  },
+  {
+    "date": "2021-02-22",
+    "rent": 16.24,
+    "cumulative_rents": 21.65304
+  },
+  {
+    "date": "2021-03-01",
+    "rent": 5.41,
+    "cumulative_rents": 27.066300000000002
+  },
+  {
+    "date": "2021-03-10",
+    "rent": 5.41,
+    "cumulative_rents": 32.47956
+  },
+  {
+    "date": "2021-03-15",
+    "rent": 5.41,
+    "cumulative_rents": 37.89282
+  },
+  {
+    "date": "2021-03-23",
+    "rent": 7.03,
+    "cumulative_rents": 44.920026
+  },
+  {
+    "date": "2021-03-30",
+    "rent": 5.46,
+    "cumulative_rents": 50.377486
+  },
+  {
+    "date": "2021-04-02",
+    "rent": 1.04,
+    "cumulative_rents": 51.415468
+  },
+  {
+    "date": "2021-04-05",
+    "rent": 5.73,
+    "cumulative_rents": 57.14255
+  },
+  {
+    "date": "2021-04-12",
+    "rent": 5.73,
+    "cumulative_rents": 62.869632
+  },
+  {
+    "date": "2021-04-19",
+    "rent": 5.73,
+    "cumulative_rents": 68.596714
+  },
+  {
+    "date": "2021-04-26",
+    "rent": 5.73,
+    "cumulative_rents": 74.323796
+  },
+  {
+    "date": "2021-05-03",
+    "rent": 5.73,
+    "cumulative_rents": 80.050878
+  },
+  {
+    "date": "2021-05-10",
+    "rent": 5.73,
+    "cumulative_rents": 85.77796
+  },
+  {
+    "date": "2021-05-17",
+    "rent": 5.73,
+    "cumulative_rents": 91.50504199999999
+  },
+  {
+    "date": "2021-05-25",
+    "rent": 5.73,
+    "cumulative_rents": 97.23212399999998
+  },
+  {
+    "date": "2021-05-31",
+    "rent": 5.87,
+    "cumulative_rents": 103.10221999999999
+  },
+  {
+    "date": "2021-06-07",
+    "rent": 6.06,
+    "cumulative_rents": 109.163001
+  },
+  {
+    "date": "2021-06-14",
+    "rent": 6.28,
+    "cumulative_rents": 115.44158999999999
+  },
+  {
+    "date": "2021-06-22",
+    "rent": 6.65,
+    "cumulative_rents": 122.086756
+  },
+  {
+    "date": "2021-06-28",
+    "rent": 6.69,
+    "cumulative_rents": 128.778497
+  },
+  {
+    "date": "2021-07-05",
+    "rent": 6.69,
+    "cumulative_rents": 135.470238
+  },
+  {
+    "date": "2021-07-12",
+    "rent": 6.96,
+    "cumulative_rents": 142.434575
+  },
+  {
+    "date": "2021-07-19",
+    "rent": 7.12,
+    "cumulative_rents": 149.552011
+  },
+  {
+    "date": "2021-07-26",
+    "rent": 7.26,
+    "cumulative_rents": 156.810355
+  },
+  {
+    "date": "2021-08-02",
+    "rent": 7.31,
+    "cumulative_rents": 164.12506199999999
+  },
+  {
+    "date": "2021-08-09",
+    "rent": 7.31,
+    "cumulative_rents": 171.43976899999998
+  },
+  {
+    "date": "2021-08-16",
+    "rent": 7.31,
+    "cumulative_rents": 178.75447599999998
+  },
+  {
+    "date": "2021-08-23",
+    "rent": 7.31,
+    "cumulative_rents": 186.06918299999998
+  },
+  {
+    "date": "2021-08-30",
+    "rent": 7.31,
+    "cumulative_rents": 193.38388999999998
+  },
+  {
+    "date": "2021-09-06",
+    "rent": 7.31,
+    "cumulative_rents": 200.69859699999998
+  },
+  {
+    "date": "2021-09-13",
+    "rent": 7.31,
+    "cumulative_rents": 208.01330399999998
+  },
+  {
+    "date": "2021-09-20",
+    "rent": 7.31,
+    "cumulative_rents": 215.32801099999998
+  },
+  {
+    "date": "2021-09-29",
+    "rent": 7.31,
+    "cumulative_rents": 222.64271799999997
+  },
+  {
+    "date": "2021-10-05",
+    "rent": 7.31,
+    "cumulative_rents": 229.95742499999997
+  },
+  {
+    "date": "2021-10-11",
+    "rent": 7.31,
+    "cumulative_rents": 237.27213199999997
+  },
+  {
+    "date": "2021-10-18",
+    "rent": 7.46,
+    "cumulative_rents": 244.73519099999996
+  },
+  {
+    "date": "2021-10-25",
+    "rent": 7.46,
+    "cumulative_rents": 252.19824999999994
+  },
+  {
+    "date": "2021-11-01",
+    "rent": 7.46,
+    "cumulative_rents": 259.66130899999996
+  },
+  {
+    "date": "2021-11-08",
+    "rent": 7.46,
+    "cumulative_rents": 267.12436799999995
+  },
+  {
+    "date": "2021-11-16",
+    "rent": 7.46,
+    "cumulative_rents": 274.58742699999993
+  },
+  {
+    "date": "2021-11-22",
+    "rent": 7.46,
+    "cumulative_rents": 282.0504859999999
+  },
+  {
+    "date": "2021-11-29",
+    "rent": 7.46,
+    "cumulative_rents": 289.5135449999999
+  },
+  {
+    "date": "2021-12-06",
+    "rent": 7.46,
+    "cumulative_rents": 296.9766039999999
+  },
+  {
+    "date": "2021-12-13",
+    "rent": 7.46,
+    "cumulative_rents": 304.4396629999999
+  },
+  {
+    "date": "2021-12-22",
+    "rent": 7.46,
+    "cumulative_rents": 311.90272199999987
+  },
+  {
+    "date": "2021-12-27",
+    "rent": 7.84,
+    "cumulative_rents": 319.7390389999999
+  },
+  {
+    "date": "2022-01-03",
+    "rent": 7.9,
+    "cumulative_rents": 327.6380409999999
+  },
+  {
+    "date": "2022-01-10",
+    "rent": 7.9,
+    "cumulative_rents": 335.53704299999987
+  },
+  {
+    "date": "2022-01-17",
+    "rent": 7.9,
+    "cumulative_rents": 343.43604499999987
+  },
+  {
+    "date": "2022-01-24",
+    "rent": 8.24,
+    "cumulative_rents": 351.6754119999999
+  },
+  {
+    "date": "2022-01-31",
+    "rent": 8.4,
+    "cumulative_rents": 360.0770139999999
+  },
+  {
+    "date": "2022-02-07",
+    "rent": 8.4,
+    "cumulative_rents": 368.4760029999999
+  },
+  {
+    "date": "2022-02-14",
+    "rent": 8.42,
+    "cumulative_rents": 376.8956869999999
+  },
+  {
+    "date": "2022-02-21",
+    "rent": 8.79,
+    "cumulative_rents": 385.6877559999999
+  },
+  {
+    "date": "2022-02-28",
+    "rent": 8.79,
+    "cumulative_rents": 394.47982499999995
+  },
+  {
+    "date": "2022-03-05",
+    "rent": 12.12,
+    "cumulative_rents": 406.59982499999995
+  },
+  {
+    "date": "2022-03-07",
+    "rent": 8.83,
+    "cumulative_rents": 415.43276499999996
+  },
+  {
+    "date": "2022-03-14",
+    "rent": 8.83,
+    "cumulative_rents": 424.26570499999997
+  },
+  {
+    "date": "2022-03-21",
+    "rent": 8.83,
+    "cumulative_rents": 433.098645
+  },
+  {
+    "date": "2022-03-26",
+    "rent": 8.15,
+    "cumulative_rents": 441.24864499999995
+  },
+  {
+    "date": "2022-03-28",
+    "rent": 8.83,
+    "cumulative_rents": 450.08158499999996
+  },
+  {
+    "date": "2022-04-04",
+    "rent": 9.08,
+    "cumulative_rents": 459.160402
+  },
+  {
+    "date": "2022-04-11",
+    "rent": 9.44,
+    "cumulative_rents": 468.605007
+  },
+  {
+    "date": "2022-04-18",
+    "rent": 9.44,
+    "cumulative_rents": 478.049612
+  },
+  {
+    "date": "2022-04-25",
+    "rent": 9.56,
+    "cumulative_rents": 487.61003600000004
+  },
+  {
+    "date": "2022-05-02",
+    "rent": 9.71,
+    "cumulative_rents": 497.31590000000006
+  },
+  {
+    "date": "2022-05-07",
+    "rent": 12.07,
+    "cumulative_rents": 509.38590000000005
+  },
+  {
+    "date": "2022-05-09",
+    "rent": 10.05,
+    "cumulative_rents": 519.434463
+  },
+  {
+    "date": "2022-05-16",
+    "rent": 10.05,
+    "cumulative_rents": 529.483026
+  },
+  {
+    "date": "2022-05-23",
+    "rent": 10.05,
+    "cumulative_rents": 539.5315889999999
+  },
+  {
+    "date": "2022-05-30",
+    "rent": 11.12,
+    "cumulative_rents": 550.6565619999999
+  },
+  {
+    "date": "2022-06-06",
+    "rent": 11.1,
+    "cumulative_rents": 561.7580739999999
+  },
+  {
+    "date": "2022-06-13",
+    "rent": 11.1,
+    "cumulative_rents": 572.8595859999998
+  },
+  {
+    "date": "2022-06-20",
+    "rent": 11.18,
+    "cumulative_rents": 584.0370779999998
+  },
+  {
+    "date": "2022-06-27",
+    "rent": 21.43,
+    "cumulative_rents": 605.4718779999998
+  },
+  {
+    "date": "2022-07-04",
+    "rent": 11.4,
+    "cumulative_rents": 616.8744969999998
+  },
+  {
+    "date": "2022-07-11",
+    "rent": 11.35,
+    "cumulative_rents": 628.2245679999997
+  },
+  {
+    "date": "2022-07-18",
+    "rent": 11.48,
+    "cumulative_rents": 639.7006089999998
+  },
+  {
+    "date": "2022-07-25",
+    "rent": 11.76,
+    "cumulative_rents": 651.4640089999998
+  },
+  {
+    "date": "2022-08-01",
+    "rent": 11.85,
+    "cumulative_rents": 663.3169589999998
+  },
+  {
+    "date": "2022-08-08",
+    "rent": 11.97,
+    "cumulative_rents": 675.2843769999997
+  },
+  {
+    "date": "2022-08-15",
+    "rent": 11.97,
+    "cumulative_rents": 687.2517949999997
+  },
+  {
+    "date": "2022-08-22",
+    "rent": 11.97,
+    "cumulative_rents": 699.2192129999996
+  },
+  {
+    "date": "2022-08-29",
+    "rent": 11.97,
+    "cumulative_rents": 711.1866309999996
+  },
+  {
+    "date": "2022-09-05",
+    "rent": 12.11,
+    "cumulative_rents": 723.2992629999995
+  },
+  {
+    "date": "2022-09-12",
+    "rent": 12.11,
+    "cumulative_rents": 735.4118939999995
+  },
+  {
+    "date": "2022-09-19",
+    "rent": 12.11,
+    "cumulative_rents": 747.5245259999995
+  },
+  {
+    "date": "2022-09-26",
+    "rent": 12.11,
+    "cumulative_rents": 759.6371589999994
+  },
+  {
+    "date": "2022-10-03",
+    "rent": 12.14,
+    "cumulative_rents": 771.7772559999994
+  },
+  {
+    "date": "2022-10-10",
+    "rent": 11.97,
+    "cumulative_rents": 783.7424189999994
+  },
+  {
+    "date": "2022-10-17",
+    "rent": 12.06,
+    "cumulative_rents": 795.8058399999993
+  },
+  {
+    "date": "2022-10-24",
+    "rent": 12.31,
+    "cumulative_rents": 808.1149049999993
+  },
+  {
+    "date": "2022-10-29",
+    "rent": 9.1,
+    "cumulative_rents": 817.2149049999994
+  },
+  {
+    "date": "2022-10-31",
+    "rent": 12.52,
+    "cumulative_rents": 829.7338889999994
+  },
+  {
+    "date": "2022-11-07",
+    "rent": 12.95,
+    "cumulative_rents": 842.6876069999994
+  },
+  {
+    "date": "2022-11-14",
+    "rent": 13.11,
+    "cumulative_rents": 855.7946029999994
+  },
+  {
+    "date": "2022-11-21",
+    "rent": 13.61,
+    "cumulative_rents": 869.4063109999994
+  },
+  {
+    "date": "2022-11-28",
+    "rent": 13.7,
+    "cumulative_rents": 883.1021369999994
+  },
+  {
+    "date": "2022-12-04",
+    "rent": 4.02,
+    "cumulative_rents": 887.1221369999994
+  },
+  {
+    "date": "2022-12-05",
+    "rent": 13.7,
+    "cumulative_rents": 900.8208829999994
+  },
+  {
+    "date": "2022-12-12",
+    "rent": 13.7,
+    "cumulative_rents": 914.5196289999994
+  },
+  {
+    "date": "2022-12-19",
+    "rent": 13.7,
+    "cumulative_rents": 928.2183749999995
+  },
+  {
+    "date": "2022-12-26",
+    "rent": 14.02,
+    "cumulative_rents": 942.2357729999994
+  },
+  {
+    "date": "2023-01-02",
+    "rent": 12.2,
+    "cumulative_rents": 954.4338889999995
+  },
+  {
+    "date": "2023-01-09",
+    "rent": 17.01,
+    "cumulative_rents": 971.4397949999994
+  },
+  {
+    "date": "2023-01-16",
+    "rent": 14.88,
+    "cumulative_rents": 986.3199639999995
+  },
+  {
+    "date": "2023-01-23",
+    "rent": 15.27,
+    "cumulative_rents": 1001.5874409999994
+  },
+  {
+    "date": "2023-01-30",
+    "rent": 15.56,
+    "cumulative_rents": 1017.1451329999994
+  },
+  {
+    "date": "2023-02-06",
+    "rent": 15.75,
+    "cumulative_rents": 1032.8980029999993
+  },
+  {
+    "date": "2023-02-13",
+    "rent": 15.75,
+    "cumulative_rents": 1048.6508729999994
+  },
+  {
+    "date": "2023-02-20",
+    "rent": 15.75,
+    "cumulative_rents": 1064.4037429999994
+  },
+  {
+    "date": "2023-02-27",
+    "rent": 15.75,
+    "cumulative_rents": 1080.1566129999994
+  },
+  {
+    "date": "2023-03-06",
+    "rent": 15.65,
+    "cumulative_rents": 1095.8060059999993
+  },
+  {
+    "date": "2023-03-13",
+    "rent": 15.68,
+    "cumulative_rents": 1111.4813229999993
+  },
+  {
+    "date": "2023-03-20",
+    "rent": 15.95,
+    "cumulative_rents": 1127.4275449999993
+  },
+  {
+    "date": "2023-03-27",
+    "rent": 15.68,
+    "cumulative_rents": 1143.1028619999993
+  },
+  {
+    "date": "2023-04-03",
+    "rent": 16.09,
+    "cumulative_rents": 1159.1898929999993
+  },
+  {
+    "date": "2023-04-10",
+    "rent": 15.91,
+    "cumulative_rents": 1175.1006379999992
+  },
+  {
+    "date": "2023-04-17",
+    "rent": 15.91,
+    "cumulative_rents": 1191.0113829999991
+  },
+  {
+    "date": "2023-04-24",
+    "rent": 16.06,
+    "cumulative_rents": 1207.073110999999
+  },
+  {
+    "date": "2023-05-01",
+    "rent": 16.06,
+    "cumulative_rents": 1223.134838999999
+  },
+  {
+    "date": "2023-05-08",
+    "rent": 16.04,
+    "cumulative_rents": 1239.175547999999
+  },
+  {
+    "date": "2023-05-15",
+    "rent": 16.04,
+    "cumulative_rents": 1255.2162569999991
+  },
+  {
+    "date": "2023-05-22",
+    "rent": 16.04,
+    "cumulative_rents": 1271.2569659999992
+  },
+  {
+    "date": "2023-05-29",
+    "rent": 16.04,
+    "cumulative_rents": 1287.2976749999993
+  },
+  {
+    "date": "2023-06-05",
+    "rent": 15.72,
+    "cumulative_rents": 1303.0132749999993
+  },
+  {
+    "date": "2023-06-12",
+    "rent": 15.72,
+    "cumulative_rents": 1318.7288749999993
+  },
+  {
+    "date": "2023-06-19",
+    "rent": 15.72,
+    "cumulative_rents": 1334.4444749999993
+  },
+  {
+    "date": "2023-06-26",
+    "rent": 15.72,
+    "cumulative_rents": 1350.1600749999993
+  },
+  {
+    "date": "2023-06-30",
+    "rent": 6.14,
+    "cumulative_rents": 1356.3000749999994
+  },
+  {
+    "date": "2023-07-03",
+    "rent": 15.72,
+    "cumulative_rents": 1372.0156749999994
+  },
+  {
+    "date": "2023-07-11",
+    "rent": 12.18,
+    "cumulative_rents": 1384.1996099999994
+  },
+  {
+    "date": "2023-07-17",
+    "rent": 12.22,
+    "cumulative_rents": 1396.4215429999995
+  },
+  {
+    "date": "2023-07-24",
+    "rent": 12.32,
+    "cumulative_rents": 1408.7384699999996
+  },
+  {
+    "date": "2023-07-31",
+    "rent": 12.32,
+    "cumulative_rents": 1421.0553969999996
+  },
+  {
+    "date": "2023-08-07",
+    "rent": 13.36,
+    "cumulative_rents": 1434.4193599999996
+  },
+  {
+    "date": "2023-08-14",
+    "rent": 13.51,
+    "cumulative_rents": 1447.9263979999996
+  },
+  {
+    "date": "2023-08-21",
+    "rent": 13.66,
+    "cumulative_rents": 1461.5850239999995
+  },
+  {
+    "date": "2023-08-28",
+    "rent": 13.66,
+    "cumulative_rents": 1475.2436499999994
+  },
+  {
+    "date": "2023-09-04",
+    "rent": 13.66,
+    "cumulative_rents": 1488.9022759999993
+  },
+  {
+    "date": "2023-09-11",
+    "rent": 13.69,
+    "cumulative_rents": 1502.5902689999994
+  },
+  {
+    "date": "2023-09-18",
+    "rent": 13.69,
+    "cumulative_rents": 1516.2782619999994
+  },
+  {
+    "date": "2023-09-25",
+    "rent": 14.38,
+    "cumulative_rents": 1530.6546109999992
+  },
+  {
+    "date": "2023-09-29",
+    "rent": 4.07,
+    "cumulative_rents": 1534.7246109999992
+  },
+  {
+    "date": "2023-10-02",
+    "rent": 14.4,
+    "cumulative_rents": 1549.1213839999991
+  },
+  {
+    "date": "2023-10-09",
+    "rent": 20.45,
+    "cumulative_rents": 1569.5741699999992
+  },
+  {
+    "date": "2023-10-16",
+    "rent": 14.66,
+    "cumulative_rents": 1584.2363889999992
+  },
+  {
+    "date": "2023-10-23",
+    "rent": 14.66,
+    "cumulative_rents": 1598.8986079999993
+  },
+  {
+    "date": "2023-10-30",
+    "rent": 14.66,
+    "cumulative_rents": 1613.5608269999993
+  },
+  {
+    "date": "2023-11-06",
+    "rent": 15.33,
+    "cumulative_rents": 1628.8920189999994
+  },
+  {
+    "date": "2023-11-13",
+    "rent": 15.33,
+    "cumulative_rents": 1644.2232109999995
+  },
+  {
+    "date": "2023-11-17",
+    "rent": 11.08,
+    "cumulative_rents": 1655.3032109999995
+  },
+  {
+    "date": "2023-11-20",
+    "rent": 15.68,
+    "cumulative_rents": 1670.9835379999995
+  },
+  {
+    "date": "2023-11-27",
+    "rent": 16.19,
+    "cumulative_rents": 1687.1738679999994
+  },
+  {
+    "date": "2023-12-04",
+    "rent": 16.53,
+    "cumulative_rents": 1703.7043569999994
+  },
+  {
+    "date": "2023-12-11",
+    "rent": 17.12,
+    "cumulative_rents": 1720.8259729999993
+  },
+  {
+    "date": "2023-12-18",
+    "rent": 17.68,
+    "cumulative_rents": 1738.5098029999992
+  },
+  {
+    "date": "2023-12-25",
+    "rent": 17.68,
+    "cumulative_rents": 1756.1936329999992
+  },
+  {
+    "date": "2024-01-01",
+    "rent": 17.68,
+    "cumulative_rents": 1773.8774629999991
+  },
+  {
+    "date": "2024-01-08",
+    "rent": 17.98,
+    "cumulative_rents": 1791.855393999999
+  },
+  {
+    "date": "2024-01-15",
+    "rent": 17.98,
+    "cumulative_rents": 1809.833324999999
+  },
+  {
+    "date": "2024-01-22",
+    "rent": 18.2,
+    "cumulative_rents": 1828.031518999999
+  }
+]
