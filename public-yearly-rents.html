@@ -31,16 +31,17 @@
           }).format(price);
         }
 
-        var months = data.map(function(item) { return item["month"]; });
+        var years = data.map(function(item) { return item["year"]; });
         var rents = data.map(function(item) { return item["rents"]; });
 
         var chartConfig = {
           type: "bar",
           data: {
-            labels: months,
+            labels: years,
             datasets: [{
-              label: "Monthly Rents",
+              label: "Yearly Rents",
               data: rents,
+              backgroundColor: "#fac8bf",
               borderWidth: 1,
               lineTension: 0.2
             }]
@@ -66,7 +67,7 @@
             plugins: {
               tooltip: {
                 callbacks: {
-                  label: function(context) { return ' Month rent: ' + priceInUSD(context.parsed.y); }
+                  label: function(context) { return ' Year Rent: ' + priceInUSD(context.parsed.y); }
                 }
               }
             }
@@ -85,7 +86,7 @@
 
     function loadDataProd() {
       document.addEventListener('DOMContentLoaded', function () {
-        const fileToLoad = 'files/monthly_rents.json';
+        const fileToLoad = 'files/yearly_rents.json';
 
         fetch(fileToLoad)
           .then(function(response) {
