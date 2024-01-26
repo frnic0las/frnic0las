@@ -1,0 +1,98 @@
+[
+  {
+    "month": "2022, Jan",
+    "rents": 40.34
+  },
+  {
+    "month": "2022, Feb",
+    "rents": 34.4
+  },
+  {
+    "month": "2022, Mar",
+    "rents": 55.6
+  },
+  {
+    "month": "2022, Apr",
+    "rents": 37.53
+  },
+  {
+    "month": "2022, May",
+    "rents": 63.05
+  },
+  {
+    "month": "2022, Jun",
+    "rents": 54.82
+  },
+  {
+    "month": "2022, Jul",
+    "rents": 45.99
+  },
+  {
+    "month": "2022, Aug",
+    "rents": 59.72
+  },
+  {
+    "month": "2022, Sep",
+    "rents": 48.45
+  },
+  {
+    "month": "2022, Oct",
+    "rents": 70.1
+  },
+  {
+    "month": "2022, Nov",
+    "rents": 53.37
+  },
+  {
+    "month": "2022, Dec",
+    "rents": 59.13
+  },
+  {
+    "month": "2023, Jan",
+    "rents": 74.91
+  },
+  {
+    "month": "2023, Feb",
+    "rents": 63.01
+  },
+  {
+    "month": "2023, Mar",
+    "rents": 62.95
+  },
+  {
+    "month": "2023, Apr",
+    "rents": 63.97
+  },
+  {
+    "month": "2023, May",
+    "rents": 80.22
+  },
+  {
+    "month": "2023, Jun",
+    "rents": 69.0
+  },
+  {
+    "month": "2023, Jul",
+    "rents": 64.76
+  },
+  {
+    "month": "2023, Aug",
+    "rents": 54.19
+  },
+  {
+    "month": "2023, Sep",
+    "rents": 59.48
+  },
+  {
+    "month": "2023, Oct",
+    "rents": 78.84
+  },
+  {
+    "month": "2023, Nov",
+    "rents": 73.61
+  },
+  {
+    "month": "2023, Dec",
+    "rents": 69.02
+  }
+]
