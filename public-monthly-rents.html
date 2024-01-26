@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Statistics</title>
+    <meta name="robots" content="noindex, nofollow">
+    <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+  </head>
+  <body>
+    <canvas id="drawing"></canvas>
+    <div id="drawing-fallback"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+    function handleEmptyData() {
+      document.getElementById('drawing').remove();
+      document.getElementById('drawing-fallback').innerHTML += '<div>Nothing to display here</div>';
+    }
+
+    function handleData(data) {
+      if(data.length === 0) {
+        handleEmptyData();
+      } else {
+        function priceInUSD(price) {
+          return new Intl.NumberFormat('en-US', { 
+            style: 'currency',
+            currency: 'USD'
+          }).format(price);
+        }
+
+        var months = data.map(function(item) { return item["month"]; });
+        var rents = data.map(function(item) { return item["rents"]; });
+
+        var chartConfig = {
+          type: "bar",
+          data: {
+            labels: months,
+            datasets: [{
+              label: "Monthly Rents",
+              data: rents,
+              borderWidth: 1,
+              lineTension: 0.2
+            }]
+          },
+          options: {
+            responsive: true,
+            interaction: {
+              mode: "index",
+              intersect: false,
+            },
+            scales: {
+              x: {
+                //grid: { display: false }
+              },
+              y: {
+                type: "linear",
+                grace: 0.5,
+                ticks: {
+                  callback: (value, index, ticks) => { return priceInUSD(value); }
+                }
+              }
+            },
+            plugins: {
+              tooltip: {
+                callbacks: {
+                  label: function(context) { return ' ' + context.dataset.label + ': ' + priceInUSD(context.parsed.y); }
+                }
+              }
+            }
+          }
+        }
+
+        var ctx = document.getElementById("drawing").getContext("2d");
+        var chart = new Chart(ctx, chartConfig);
+      }
+    }
+
+    /*function loadDataDev() {
+      const data = {{ rents|tojson }};
+      handleData(data);
+    }*/
+
+    function loadDataProd() {
+      document.addEventListener('DOMContentLoaded', function () {
+        const fileToLoad = 'files/monthly_rents.json';
+
+        fetch(fileToLoad)
+          .then(function(response) {
+            return response.json();
+          })
+          .then(function(jsonData) {
+            handleData(jsonData);
+          })
+          .catch(function(error) {
+            console.error('There was a problem with the fetch operation:', error);
+          });
+      });
+    }
+
+    function loadData(environment) {
+      if(environment === 'dev') {
+        loadDataDev();
+      } else if(environment === 'prod') {
+        loadDataProd();
+      } else {
+        console.error('Invalid environment parameter.');
+      }
+    }
+
+    loadData('prod');
+    </script>
+  </body>
+</html>
