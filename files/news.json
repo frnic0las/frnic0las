@@ -1,0 +1,146 @@
+[
+  {
+    "id": 338396,
+    "news": "CPI (Consumer Price Index)",
+    "date": "2024-01-11T14:30:00",
+    "timezone": "Europe/Paris"
+  },
+  {
+    "id": 338397,
+    "news": "NFP (Non Farm Payroll)",
+    "date": "2024-01-05T14:30:00",
+    "timezone": "Europe/Paris"
+  },
+  {
+    "id": 338398,
+    "news": "CPI (Consumer Price Index)",
+    "date": "2023-12-12T14:30:00",
+    "timezone": "Europe/Paris"
+  },
+  {
+    "id": 338399,
+    "news": "NFP (Non Farm Payroll)",
+    "date": "2023-12-08T14:30:00",
+    "timezone": "Europe/Paris"
+  },
+  {
+    "id": 338400,
+    "news": "CPI (Consumer Price Index)",
+    "date": "2023-11-14T14:30:00",
+    "timezone": "Europe/Paris"
+  },
+  {
+    "id": 338401,
+    "news": "NFP (Non Farm Payroll)",
+    "date": "2023-11-03T14:30:00",
+    "timezone": "Europe/Paris"
+  },
+  {
+    "id": 338402,
+    "news": "FOMC (Fed Interest Rate)",
+    "date": "2023-12-13T20:00:00",
+    "timezone": "Europe/Paris"
+  },
+  {
+    "id": 338403,
+    "news": "NFP (Non Farm Payroll)",
+    "date": "2023-10-06T14:30:00",
+    "timezone": "Europe/Paris"
+  },
+  {
+    "id": 338404,
+    "news": "FOMC (Fed Interest Rate)",
+    "date": "2023-11-01T20:00:00",
+    "timezone": "Europe/Paris"
+  },
+  {
+    "id": 338405,
+    "news": "CPI (Consumer Price Index)",
+    "date": "2023-10-12T14:30:00",
+    "timezone": "Europe/Paris"
+  },
+  {
+    "id": 338406,
+    "news": "NFP (Non Farm Payroll)",
+    "date": "2023-09-01T14:30:00",
+    "timezone": "Europe/Paris"
+  },
+  {
+    "id": 338407,
+    "news": "CPI (Consumer Price Index)",
+    "date": "2023-09-13T14:30:00",
+    "timezone": "Europe/Paris"
+  },
+  {
+    "id": 338408,
+    "news": "FOMC (Fed Interest Rate)",
+    "date": "2023-09-20T20:00:00",
+    "timezone": "Europe/Paris"
+  },
+  {
+    "id": 338409,
+    "news": "FOMC (Fed Interest Rate)",
+    "date": "2024-01-31T20:00:00",
+    "timezone": "Europe/Paris"
+  },
+  {
+    "id": 342303,
+    "news": "NFP (Non Farm Payroll)",
+    "date": "2024-02-02T14:30:00",
+    "timezone": "Europe/Paris"
+  },
+  {
+    "id": 346822,
+    "news": "CPI (Consumer Price Index)",
+    "date": "2024-02-13T14:30:00",
+    "timezone": "Europe/Paris"
+  },
+  {
+    "id": 342506,
+    "news": "NFP (Non Farm Payroll)",
+    "date": "2024-03-08T14:30:00",
+    "timezone": "Europe/Paris"
+  },
+  {
+    "id": 348355,
+    "news": "CPI (Consumer Price Index)",
+    "date": "2024-03-12T13:30:00",
+    "timezone": "Europe/Paris"
+  },
+  {
+    "id": 339476,
+    "news": "FOMC (Fed Interest Rate)",
+    "date": "2024-03-20T19:00:00",
+    "timezone": "Europe/Paris"
+  },
+  {
+    "id": 342777,
+    "news": "NFP (Non Farm Payroll)",
+    "date": "2024-04-05T14:30:00",
+    "timezone": "Europe/Paris"
+  },
+  {
+    "id": 349812,
+    "news": "CPI (Consumer Price Index)",
+    "date": "2024-04-10T14:30:00",
+    "timezone": "Europe/Paris"
+  },
+  {
+    "id": 339477,
+    "news": "FOMC (Fed Interest Rate)",
+    "date": "2024-05-01T20:00:00",
+    "timezone": "Europe/Paris"
+  },
+  {
+    "id": 342975,
+    "news": "NFP (Non Farm Payroll)",
+    "date": "2024-05-03T14:30:00",
+    "timezone": "Europe/Paris"
+  },
+  {
+    "id": 351185,
+    "news": "CPI (Consumer Price Index)",
+    "date": "2024-05-15T14:30:00",
+    "timezone": "Europe/Paris"
+  }
+]
